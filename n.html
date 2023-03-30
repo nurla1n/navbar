@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         box-sizing:border-box;
+      }
+      body {
+         margin:0;
+      }
+      #check {
+         display:none;
+      }
+      .label1 {
+         position:fixed;
+         top:10px;
+         right:10px;
+         border:2px solid black;
+         padding:12px 20px;
+         cursor:pointer;
+      }
+  
+.navbar {
+ position:fixed;
+ background-color:brown;
+ color:white;
+ padding:0px;
+ top:0;
+ width:200px;
+ height:710px;
+ margin:0;
+ left:-200px;
+ transition:left 1s;
+ 
+}
+ul {
+   list-style-type: none;
+   padding:0;
+   margin:0;
+
+}
+li {
+   display:block;
+   padding:20px 12px;
+   
+}
+li:hover {
+   background-color:blue;
+}
+#check:checked + .navbar {
+   left:0px;
+}
+
+   </style>
+</head>
+<body>
+<label for="check" class="label1">Menyu</label>
+<input type="checkbox" id="check">
+<div class="navbar">
+   <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+   </ul>
+</div>
+</body>
+</html>
